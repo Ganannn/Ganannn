@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ffc5ce3ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Personal Website</p>
+            <h1>Hi, I'm Marc Germine P. Ganan<br>From IT-226</h1>
+            <p>Welcome to my Personal Website</p>
+        </div>
+    </div>
+</div>
+<!--------------------------About-------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="lucky.jpg" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Marc. I love to play basketball and video games. I also enjoy listening to music. In terms of education, I'm content with the course I chose, even though it's a bit challenging. I'm confident in my skills and believe I can excel in my subjects. As for hobbies, I like playing basketball and occasionally cooking meals.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Basketball</span></li>
+                        <li><span>Cooking</span><br>Sisig, Lechon Paksiw, etc.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>No Experience</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>No Experience</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SERVICES -->
+<div class="class">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Personal Website</h2>
+                <p>Hi, I'm Marc Germine Ganan Creating a Personal Website/Portfolio</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Portfolio</h2>
+                <p>Hi, I'm Marc Germine Ganan Creating a Personal Website/Portfolio</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Services</h2>
+                <p>Hi, I'm Marc Germine Ganan Creating a Personal Website/Portfolio</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PortFolio -->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="Work-List">
+            <div class="work">
+                <img src="image.1.png">
+                <div class="layer">
+                    <h3>Home Page</h3>
+                    <p>The Homepage Can you See a Discription and My Name</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="image.2.png">
+                <div class="layer">
+                    <h3>Home Page</h3>
+                    <p>The Homepage Can you See a Discription and My Name</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>   
+            </div>
+            <div class="work">
+                <img src="image.5.png">
+                <div class="layer">
+                    <h3>Home Page</h3>
+                    <p>The Homepage Can you See a Discription and My Name</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div> 
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------------Contact Information----------------------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> marcgermineganan05@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7894561230</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright * Marc. PortFolio <i class="fa-solid fa-heart"></i> Personal Website</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.querySelectorAll(".tab-links");
+    var tabcontents = document.querySelectorAll(".tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+
+        document.querySelector(`#${tabname}`).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
